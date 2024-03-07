@@ -5,6 +5,7 @@ import Profile from '../../../public/assets/belussi.jpg';
 import Check from '../../../public/assets/check.svg';
 
 export default function Card() {
+    const texto = 'Olá, gostaria de marcar um encontro com a Ju!';
     return (
         <div className={style.container}>
 
@@ -39,7 +40,7 @@ export default function Card() {
                 </ul>
 
 
-                <a className={style.button} href="https://web.whatsapp.com/send?phone=5513991303306">
+                <a className={style.button} href={`https://wa.me/+5513991303306?text=${texto}`} target="_blank">
                     agende um horário
                 </a>
 
